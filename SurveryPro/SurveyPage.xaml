@@ -1,0 +1,72 @@
+﻿<Window x:Class="SurveryPro.SurveyPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SurveryPro"
+        mc:Ignorable="d"
+        Title="SurveyPage" Height="720" Width="800">
+    <Grid Height="720" VerticalAlignment="Top" HorizontalAlignment="Center" Width="800">
+
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="40,29,0,0" Text="Personal Details:" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="93,56,0,0" Text="Surname" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="40,10,0,0" Text="Take our Survey" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Height="20" Margin="219,56,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="93,106,0,0" Text="First Names" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtfirstName" HorizontalAlignment="Left" Height="26" Margin="219,98,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="92,145,0,0" Text="Contact number" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="txtContact" HorizontalAlignment="Left" Height="29" Margin="217,138,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="195" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.173"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="100,176,0,0" Text="Date" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,209,0,0" Text="Age" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.6,-0.652"/>
+        <TextBox x:Name="txtAge" HorizontalAlignment="Left" Height="26" Margin="219,209,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="10,262,0,0" Text="What is your favourite food? (You can  choose more than  1 answer)" TextWrapping="Wrap" VerticalAlignment="Top" Width="530"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="35" Margin="389,656,0,0" VerticalAlignment="Top" Width="151" Click="btnSubmit_Click"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Height="28" Margin="219,176,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <CheckBox x:Name="chkPizza" Content="Pizza" HorizontalAlignment="Left" Height="21" Margin="30,305,0,0" VerticalAlignment="Top" Width="121" Checked="chkPizza_Checked"/>
+        <CheckBox x:Name="chkPasta" Content="Pasta" HorizontalAlignment="Left" Height="21" Margin="30,331,0,0" VerticalAlignment="Top" Width="121" Checked="chkPasta_Checked"/>
+        <CheckBox x:Name="chkPap" Content="Pap and Wors" HorizontalAlignment="Left" Height="21" Margin="30,357,0,0" VerticalAlignment="Top" Width="121" Checked="chkPap_Checked"/>
+        <CheckBox x:Name="chkChicken" Content="Chicken stir fry" HorizontalAlignment="Left" Height="21" Margin="30,383,0,0" VerticalAlignment="Top" Width="121" Checked="chkChicken_Checked"/>
+        <CheckBox x:Name="chkBeef" Content="Beef stir fry" HorizontalAlignment="Left" Height="21" Margin="30,404,0,0" VerticalAlignment="Top" Width="121" Checked="chkBeef_Checked"/>
+        <CheckBox x:Name="chkOther" Content="Other" HorizontalAlignment="Left" Height="21" Margin="30,425,0,0" VerticalAlignment="Top" Width="121" Checked="chkOther_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="140,451,0,0" Text="On a scale of 1 to 5 indicate wheter you strongly agree or strongly disagree" TextWrapping="Wrap" VerticalAlignment="Top" Width="565"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="30,498,0,0" Text="I like to eat out" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="30,537,0,0" Text="I like to watch movies" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="30,573,0,0" Text="I like to watch TV" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="30,609,0,0" Text="I like to listen to the radio " TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="219,472,0,0" Text="Strongly Agree" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="343,472,0,0" Text=" Agree" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="425,472,0,0" Text=" Neutral" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="540,472,0,0" Text=" Disagree" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="647,472,0,0" Text="StronlyDisagree" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+        <RadioButton x:Name="rad1" Content="1" HorizontalAlignment="Left" Height="18" Margin="232,499,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad2" Content="1" HorizontalAlignment="Left" Height="18" Margin="232,538,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad3" Content="1" HorizontalAlignment="Left" Height="18" Margin="232,574,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad4" Content="1" HorizontalAlignment="Left" Height="18" Margin="232,609,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad5" Content="2" HorizontalAlignment="Left" Height="18" Margin="343,499,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad6" Content="2" HorizontalAlignment="Left" Height="18" Margin="344,538,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad7" Content="2" HorizontalAlignment="Left" Height="18" Margin="344,574,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad8" Content="2" HorizontalAlignment="Left" Height="18" Margin="344,606,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad9" Content="3" HorizontalAlignment="Left" Height="18" Margin="426,499,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad10" Content="3" HorizontalAlignment="Left" Height="18" Margin="426,538,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad11" Content="3" HorizontalAlignment="Left" Height="18" Margin="426,574,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad12" Content="3" HorizontalAlignment="Left" Height="18" Margin="426,606,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad13" Content="4" HorizontalAlignment="Left" Height="18" Margin="541,499,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad14" Content="4" HorizontalAlignment="Left" Height="18" Margin="541,538,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad15" Content="4" HorizontalAlignment="Left" Height="18" Margin="541,574,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad16" Content="4" HorizontalAlignment="Left" Height="18" Margin="541,606,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad17" Content="5" HorizontalAlignment="Left" Height="18" Margin="653,499,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad18" Content="5" HorizontalAlignment="Left" Height="18" Margin="653,538,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad19" Content="5" HorizontalAlignment="Left" Height="18" Margin="653,574,0,0" VerticalAlignment="Top" Width="40"/>
+        <RadioButton x:Name="rad20" Content="5" HorizontalAlignment="Left" Height="18" Margin="653,606,0,0" VerticalAlignment="Top" Width="40"/>
+
+    </Grid>
+</Window>

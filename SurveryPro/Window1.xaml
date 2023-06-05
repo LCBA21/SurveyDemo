@@ -1,0 +1,31 @@
+﻿<Window x:Class="SurveryPro.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SurveryPro"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="1000">
+    <Grid>
+        <DataGrid x:Name="dataGrid"  Height="450" Width="1000"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Total Number of surveys" Binding="{Binding  Total}" Width="150"/>
+                <DataGridTextColumn Header="Average age" Binding="{Binding  AverageAge}" Width="100"/>
+                <DataGridTextColumn Header="Oldest person who participated in survey" Binding="{Binding  Oldest}" Width="250"/>
+                <DataGridTextColumn Header="Youngest person who participated in survey" Binding="{Binding  Youngest}" Width="250"/>
+
+
+
+            </DataGrid.Columns>
+            
+            
+
+
+
+        </DataGrid>
+
+
+
+
+    </Grid>
+</Window>
